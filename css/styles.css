@@ -1,0 +1,469 @@
+/* Importar tipografias */
+
+/* Reset General */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    color: black;
+    line-height: 1.2;
+}
+
+/* Estilos Generales de la pagina  */
+
+.tituloPrincipal{
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Inicio */
+
+#inicio{
+    background-image: url("../img/fondo-inicio.jpg");
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco con opacidad */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: lighten; /* Ajusta el modo de mezcla según tus preferencias */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+}
+
+.div-imagen-redondeada {
+    position: relative;
+    width: 100vw; 
+    height: 280px; 
+    overflow: hidden;
+}
+
+.imagen-redondeada {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 0 50% 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.div-imagen-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.logo {
+    width: 150px; 
+    height: auto;
+}
+
+/* Menu hamburguesa */
+
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    padding: 5px;
+    z-index: 3;
+}
+
+#menu{
+    display: flex;
+    font-size: 18px;
+}
+
+.menu-li a{
+    padding: 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: #400101;
+    border-radius: 10px;
+}
+
+.menu-li:hover, .active{
+    background-color: #F2CBC2;
+    color: #ffffff;
+}
+
+/* Header, iconos del menu hamburguesa y que se desaparezca cuando este en version mobile */
+
+#menu-button, #reproducir{
+    background-color: #2980b9;
+    border-radius: 50px;
+    border: 0;
+    outline: 0;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+i#menu-cerrar{
+    display: none;
+}
+
+nav{
+    display: none;
+}
+
+/* Estilos del menu hamburguesa */
+
+body.menu-mobile{
+    overflow: hidden;
+}
+
+body.menu-mobile i#menu-cerrar{
+    display: block;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+body.menu-mobile i#menu-hamburguesa{
+    display: none;
+}
+
+/* body.menu-mobile i#menu-reproducir{
+    display: none;
+} */
+
+body.menu-mobile #menu-button{
+    display: none;
+}
+
+body.menu-mobile header{
+    height: 60vh;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    transition: height 0.4s;
+}
+
+body.menu-mobile nav{
+    display: block;
+    width: 100%;
+    height: 50%;
+}
+
+body.menu-mobile #menu{
+    flex-direction: column;
+    align-items: end;
+    justify-content: flex-start;
+    height: 50%;
+    margin-top: 20px;
+}
+
+#reproductor {
+    display: inline-block;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #333;
+}
+
+#reproductor i {
+    font-size: 24px;
+}
+
+.imagen-medio{
+    width: 400px;
+    height: 400px;
+}
+.container-historia{
+    position: relative;
+    display: inline-block;
+    height: auto;
+}
+
+.div-imagen-redondeada-abajo{
+    position: relative;
+    width: 100vw; 
+    height: 280px; 
+    overflow: hidden;
+}
+
+.imagen-redondeada-abajo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50% 50% 0 0;
+}
+
+.fondo-blanco {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+    background-color: white;
+    z-index: 1; 
+}
+
+.fondo-beige {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+    background-color: rgb(112, 96, 96);
+    z-index: 1; 
+}
+
+.logo-nuestra-historia{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.titulo-nuestra-historia{
+    position: relative;
+    z-index: 2;
+}
+
+.parrafo-nuestra-historia{
+    position: relative;
+    z-index: 2;
+}
+
+/* Cuando y donde */
+
+#cuandoYDonde{
+    background-image: url("../img/cuando-donde.jpg");
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco con opacidad */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: lighten; /* Ajusta el modo de mezcla según tus preferencias */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.div-mapa{
+    width: 300px;
+    height: 130px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.parrafo-mapa{
+    text-align: center;
+    margin: 15px;
+    font-size: 20px;
+}
+
+.div-container-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-mapa {
+    padding: 10px 20px; 
+    background-color: #3498db; 
+    color: #fff; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    text-decoration: none; 
+    text-transform: uppercase;
+}
+
+.button-mapa:hover {
+    background-color: #2980b9; 
+}
+
+.div-conteo{
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.div-conteo-adentro{
+    margin: 10px;
+    padding: 50px;
+}
+.span-conteo {
+    margin: 0 5px;
+}
+
+.lugar{
+    margin: 10px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.div-padre{
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; 
+    margin: 15px;
+}
+.div-lugar-hora{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 25px;
+    width: 120px;
+    height: 80px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+/* Regalos */
+
+#regalos{
+    background-image: url("../img/regalos.jpg");
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco con opacidad */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: lighten; /* Ajusta el modo de mezcla según tus preferencias */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.div-condiciones{
+    width: 300px;
+    height: 460px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.parrafo-condiciones{
+    margin: 20px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.parrafo-regalos{
+    text-align: center;
+}
+
+.div-container-regalos{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    margin: 15px;
+}
+.div-regalos{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 16px;
+    width: 250px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    line-height: 1.5;
+}
+
+/* Codigo de vestimenta */
+
+#codigoDeVestimenta{
+    background-image: url("../img/codigo-de-vestimenta.jpg");
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco con opacidad */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: lighten; /* Ajusta el modo de mezcla según tus preferencias */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.parrafo-vestimenta{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.parrafo-novia{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+.div-wifi{
+    width: 250px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.parrafo-wifi{
+    text-align: center;
+    padding: 10px;
+}
+/* Confirmacion */
+
+#confirmacion{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+}
+.span-confirmacion-arriba{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+}
+.span-confirmacion-abajo{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+    margin-bottom: 30px
+}
+
+.button-ws{
+    padding: 10px 20px; 
+    background-color: #3498db; 
+    color: #fff; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    text-decoration: none; 
+    text-transform: uppercase;
+}
+
+.button-ws:hover {
+    background-color: #2980b9; 
+}
