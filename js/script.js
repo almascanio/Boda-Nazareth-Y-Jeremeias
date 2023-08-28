@@ -21,40 +21,38 @@ function actualizarContador() {
 actualizarContador(); // Actualizar contador inmediatamente
 setInterval(actualizarContador, 1000); // Actualizar cada segundo
 
-/* Menu hamburguesa */
+/* Reproductor de musica */
+document.addEventListener("DOMContentLoaded", () => {
+  const reproductor = document.getElementById("reproductor");
+  const audio = document.getElementById("miAudio");
+  let reproduciendo = false;
 
-const menuListas = document.querySelectorAll(".menu-li");
-const menuButton = document.querySelector("#menu-button");
+  reproductor.addEventListener("click", (e) => {
+      e.preventDefault();
 
-menuListas.forEach(function(lista){
-  lista.addEventListener("click", function(e){
-      const activeLista = document.querySelector(".active");
-      activeLista.classList.remove("active");
-      e.target.classList.add("active");
-  })
+      if (reproduciendo) {
+          audio.pause();
+          reproduciendo = false;
+          reproductor.querySelector("i").classList.remove("bi-pause-fill");
+          reproductor.querySelector("i").classList.add("bi-caret-right-fill");
+      } else {
+          audio.play();
+          reproduciendo = true;
+          reproductor.querySelector("i").classList.remove("bi-caret-right-fill");
+          reproductor.querySelector("i").classList.add("bi-pause-fill");
+      }
+  });
+
+  // Esperar a que el usuario interactúe y luego reproducir
+  document.addEventListener("click", () => {
+      if (!reproduciendo) {
+          audio.play();
+          reproduciendo = true;
+          reproductor.querySelector("i").classList.remove("bi-caret-right-fill");
+          reproductor.querySelector("i").classList.add("bi-pause-fill");
+      }
+  });
 });
 
-menuButton.addEventListener("click", function(){
-  document.body.classList.toggle("menu-mobile")
-});
 
 
-const reproductor = document.getElementById("reproductor");
-const audio = document.getElementById("miAudio");
-let reproduciendo = false;
-
-reproductor.addEventListener("click", (e) => {
-    e.preventDefault();
-
-    if (reproduciendo) {
-        audio.pause();
-        reproduciendo = false;
-        reproductor.querySelector("i").classList.remove("bi-pause-fill");
-        reproductor.querySelector("i").classList.add("bi-caret-right-fill");
-    } else {
-        audio.play();
-        reproduciendo = true;
-        reproductor.querySelector("i").classList.remove("bi-caret-right-fill");
-        reproductor.querySelector("i").classList.add("bi-pause-fill");
-    }
-});

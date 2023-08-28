@@ -70,102 +70,15 @@ body{
 }
 
 /* Menu hamburguesa */
-
 header {
     position: absolute;
     top: 0;
     right: 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-end; 
+    align-items: flex-end;
     padding: 5px;
     z-index: 3;
-}
-
-#menu{
-    display: flex;
-    font-size: 18px;
-}
-
-.menu-li a{
-    padding: 15px;
-    display: inline-block;
-    text-decoration: none;
-    color: #400101;
-    border-radius: 10px;
-}
-
-.menu-li:hover, .active{
-    background-color: #F2CBC2;
-    color: #ffffff;
-}
-
-/* Header, iconos del menu hamburguesa y que se desaparezca cuando este en version mobile */
-
-#menu-button, #reproducir{
-    background-color: #2980b9;
-    border-radius: 50px;
-    border: 0;
-    outline: 0;
-    font-size: 30px;
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-}
-
-i#menu-cerrar{
-    display: none;
-}
-
-nav{
-    display: none;
-}
-
-/* Estilos del menu hamburguesa */
-
-body.menu-mobile{
-    overflow: hidden;
-}
-
-body.menu-mobile i#menu-cerrar{
-    display: block;
-    align-items: center;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-body.menu-mobile i#menu-hamburguesa{
-    display: none;
-}
-
-/* body.menu-mobile i#menu-reproducir{
-    display: none;
-} */
-
-body.menu-mobile #menu-button{
-    display: none;
-}
-
-body.menu-mobile header{
-    height: 60vh;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    transition: height 0.4s;
-}
-
-body.menu-mobile nav{
-    display: block;
-    width: 100%;
-    height: 50%;
-}
-
-body.menu-mobile #menu{
-    flex-direction: column;
-    align-items: end;
-    justify-content: flex-start;
-    height: 50%;
-    margin-top: 20px;
 }
 
 #reproductor {
@@ -437,6 +350,7 @@ body.menu-mobile #menu{
     justify-content: center;
     flex-direction: column;
     align-items: center; 
+    min-height: 80vh;
 }
 .span-confirmacion-arriba{
     font-size: 18px;
