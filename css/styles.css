@@ -118,10 +118,19 @@ body{
     width: 100%;
     height: auto;
     max-width: 100%;
-    display: block;
+    position: relative;
 }
 
-.escrito-imagen-redondeada-abajo{
+.container-nos-casamos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+/* .escrito-imagen-redondeada-abajo{
     position: relative;
     left: 160px;
     top: 120px;
@@ -129,82 +138,52 @@ body{
     height: 200px;
     transform: rotate(-10deg);
 }
+ */
 
-.div-imagen-redondeada-abajo{
-    position: relative;
-    width: 100vw; 
-    height: auto;
-    overflow: hidden;
-}
 
-.imagen-redondeada-abajo {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    border-radius: 50% 50% 0 0;
-}
-
-.fondo-blanco {
-    position: absolute;
-    top: 480px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: auto;
-    border-radius: 50% 50% 0 0;
-    background-color: white;
-    z-index: 1; 
-}
-
-.fondo-beige {
-    position: absolute;
-    top: 490px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 50% 50% 0 0;
-    background-color: #DED9D6;
-    z-index: 1; 
-    /* border: 1px #000000 solid; */
-    box-shadow: 0 0 50px 0px rgb(255, 255, 255);
-}
 
 .logo-nos-casamos{
-    display: block;
-    margin: -50px auto;
-    width: 120px;
-    height: auto;
-    position: relative;
-    z-index: 2;
-}
+    position: absolute;
+    top: 160%;
+    left: 50%;
+    height: 90px;
+    width: auto;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+} 
 
 .titulo-nos-casamos{
-    display: block;
-    margin: 20px auto;
-    padding-top: 30px;
-    position: relative;
-    width: 220px;
-    height: auto;
-    z-index: 2;
+    position: absolute;
+    top: 166%;
+    left: 48%;
+    height: 100px;
+    width: auto;
+    transform: translateX(-50%);
+    z-index: 3;
 }
 
 .parrafo-nos-casamos{
-    position: relative;
-    z-index: 2;
-    font-size: 18px;
+    position: absolute;
+    top: 182%;
+    left: 5%;
+    z-index: 3;
+    font-size: 16px;
     text-align: left;
     white-space: pre-line;
     padding: 0px 0px 0px 40px;
 }
 
 .firma-nos-casamos{
-    position: relative;
-    z-index: 2;
+    position: absolute;
+    top: 238%;
+    right: -20px;
     width: 150px;
+    z-index: 3;
+    left: 15%;
     height: auto;
-    margin-top: 10px;
+   /*  margin-top: 10px;
     padding-left: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; */
 }
 
 /* Cuando y donde */
@@ -246,7 +225,7 @@ body{
 
 .div-conteo-adentro{
     margin: 10px;
-    padding: 50px;
+    padding: 80px;
 }
 
 .span-conteo {
@@ -419,10 +398,18 @@ body{
 }
 
 .logo-con-opacidad{
+    margin-top: -80px;
     height: 400px;
     width: auto;
 }
 
+.container-confirmacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+}
 .titulo-confirmacion{
     margin-top: 30px;
     height: 60px;
