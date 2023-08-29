@@ -14,24 +14,16 @@ body{
     line-height: 1.2;
 }
 
-/* Estilos Generales de la pagina  */
-
-.tituloPrincipal{
-    font-size: 30px;
-    text-transform: uppercase;
-    padding: 20px;
-    text-align: center;
-}
 
 /* Inicio */
 
 #inicio{
-    background-image: url("../img/fondo-inicio.jpg");
-    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco con opacidad */
+    background-image: url("../img/FONDO\ DE\ INICIO.jpg");
+    background-color: #c8c4b9de; 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-blend-mode: lighten; /* Ajusta el modo de mezcla según tus preferencias */
+    background-blend-mode: lighten;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -47,9 +39,9 @@ body{
 }
 
 .imagen-redondeada {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    display: block;
+    max-width: 100%;
+    height: auto;
     border-radius: 0 0 50% 50%;
     position: absolute;
     bottom: 0;
@@ -59,8 +51,10 @@ body{
 
 .div-imagen-logo {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -2rem;
+    left: -2.5rem;
+    margin: 0;
+    padding: 0;
     z-index: 2;
 }
 
@@ -69,45 +63,67 @@ body{
     height: auto;
 }
 
-/* Menu hamburguesa */
-header {
+.reproduccion {
     position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 5px;
+    top: 1rem; /* Ajusta este valor para posicionar en la esquina */
+    right: 1rem; /* Ajusta este valor para posicionar en la esquina */
+    background-color:  #DED9D6;
+    border-radius: 50%;
+    padding: 12px;
     z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.reproduccion:hover {
+    background-color: #cdb8a6ea; /* Cambio de color al pasar el ratón */
 }
 
 #reproductor {
-    display: inline-block;
-    padding: 10px;
-    background-color: #f2f2f2;
-    border-radius: 50%;
-    text-decoration: none;
-    color: #333;
+    color: #000000;
 }
 
 #reproductor i {
-    font-size: 24px;
+    font-size: 25px;
+}
+
+.escrito-imagen-redondeada{
+    position: relative;
+    width: 200px;
+    bottom: 110px;;
+    right: 90px;
+    height: 200px;
+    transform: rotate(-10deg);
 }
 
 .imagen-medio{
-    width: 400px;
-    height: 400px;
+    width: 250px;
+    height: auto;
+    margin-top: -10rem;
 }
-.container-historia{
+
+ .container-historia{
     position: relative;
     display: inline-block;
     height: auto;
+    margin-top: -10rem; 
+ } 
+
+.escrito-imagen-redondeada-abajo{
+    position: relative;
+    left: 160px;
+    top: 120px;
+    width: 200px;
+    height: 200px;
+    transform: rotate(-10deg);
 }
 
 .div-imagen-redondeada-abajo{
     position: relative;
     width: 100vw; 
-    height: 280px; 
+    height: auto;
     overflow: hidden;
 }
 
@@ -120,10 +136,11 @@ header {
 
 .fondo-blanco {
     position: absolute;
-    top: 100px;
+    top: 480px;
     left: 0;
     right: 0;
     bottom: 0;
+    height: auto;
     border-radius: 50% 50% 0 0;
     background-color: white;
     z-index: 1; 
@@ -131,36 +148,59 @@ header {
 
 .fondo-beige {
     position: absolute;
-    top: 120px;
+    top: 490px;
     left: 0;
     right: 0;
     bottom: 0;
     border-radius: 50% 50% 0 0;
-    background-color: rgb(112, 96, 96);
+    background-color: #DED9D6;
     z-index: 1; 
+    /* border: 1px #000000 solid; */
+    box-shadow: 0 0 50px 0px rgb(255, 255, 255);
 }
 
-.logo-nuestra-historia{
-    width: 100px;
-    height: 100px;
+.logo-nos-casamos{
+    display: block;
+    margin: -50px auto;
+    width: 120px;
+    height: auto;
     position: relative;
     z-index: 2;
 }
 
-.titulo-nuestra-historia{
+.titulo-nos-casamos{
+    display: block;
+    margin: 20px auto;
+    padding-top: 30px;
     position: relative;
+    width: 220px;
+    height: auto;
     z-index: 2;
 }
 
-.parrafo-nuestra-historia{
+.parrafo-nos-casamos{
     position: relative;
     z-index: 2;
+    font-size: 12px;
+    text-align: left;
+    white-space: pre-line;
+    padding: 0px 0px 0px 40px;
+}
+
+.firma-nos-casamos{
+    position: relative;
+    z-index: 2;
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+    padding-left: 40px;
+    margin-bottom: 20px;
 }
 
 /* Cuando y donde */
 
 #cuandoYDonde{
-    background-image: url("../img/cuando-donde.jpg");
+    background-image: url("../img/FONDO\ CUANDO\ Y\ DONDE.jpg");
     background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco con opacidad */
     background-size: cover;
     background-repeat: no-repeat;
@@ -173,17 +213,56 @@ header {
     padding: 20px;
 }
 
-.div-mapa{
-    width: 300px;
-    height: 130px;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin: 20px;
+.titulo-cuando-donde{
+    width: auto;
+    height: 35px;
+    margin-top: 20px;
 }
 
-.parrafo-mapa{
+.div-conteo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
     text-align: center;
-    margin: 15px;
+    margin-top: 10px;
+}
+
+.div-conteo-adentro{
+    margin: 10px;
+    padding: 50px;
+}
+
+.span-conteo {
+    margin: 0 5px;
+}
+
+.container-fecha-hora {
+    display: flex;
+    align-items: center; 
+}
+
+.img-fecha-hora{
+    margin-top: 20px;
+    padding: 10px;
+    width: 90px;
+    height: auto;
+}
+
+.logo-villa-le-brioche{
+    margin: 20px;
+    width: 200px;
+    height: auto;
+}
+
+.lugar{
+    margin: 10px;
+    font-weight: 500;
     font-size: 20px;
 }
 
@@ -195,10 +274,12 @@ header {
 
 .button-mapa {
     padding: 10px 20px; 
-    background-color: #3498db; 
-    color: #fff; 
+    margin: 10px;
+    background-color: transparent; 
+    color: #000000; 
     border: none; 
     border-radius: 10px; 
+    border: 1px solid #9B856F;
     cursor: pointer; 
     font-size: 16px; 
     text-decoration: none; 
@@ -206,55 +287,26 @@ header {
 }
 
 .button-mapa:hover {
-    background-color: #2980b9; 
+    background-color: #9B856F;
+    color: #fff;
 }
 
-.div-conteo{
-    width: 300px;
-    height: 200px;
-    border: 1px solid black;
-    border-radius: 10px;
-    font-size: 25px;
-    font-weight: bold;
+.parrafo-cuando-donde{
+    font-size: 15px;
     text-align: center;
+    padding: 20px;
 }
 
-.div-conteo-adentro{
-    margin: 10px;
-    padding: 50px;
-}
-.span-conteo {
-    margin: 0 5px;
-}
-
-.lugar{
-    margin: 10px;
-    font-weight: 500;
-    font-size: 20px;
-}
-.div-padre{
-    display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; 
-    margin: 15px;
-}
-.div-lugar-hora{
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    font-size: 25px;
-    width: 120px;
-    height: 80px;
-    border: 1px solid black;
-    border-radius: 10px;
-    display: inline-block;
-    font-weight: 600;
+.img-att{
+    width: auto;
+    height: 50px;
+    margin-top: -10px;
 }
 
 /* Regalos */
 
 #regalos{
-    background-image: url("../img/regalos.jpg");
+    background-image: url("../img/FONDO\ DRESS\ CODE.jpg");
     background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco con opacidad */
     background-size: cover;
     background-repeat: no-repeat;
@@ -266,47 +318,53 @@ header {
     align-items: center; 
 }
 
-.div-condiciones{
-    width: 300px;
-    height: 460px;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin: 30px;
+.titulo-dress-code{
+    margin-top: 30px;
+    height: 80px;
+    width: auto;
 }
 
-.parrafo-condiciones{
+.colores-codigo-de-vestimenta{
+    height: 45px;
+    width: auto;
     margin: 20px;
-    font-size: 16px;
-    text-align: justify;
+}
+
+.titulo-regalos{
+    font-size: 20px;
+    margin-top: 5px;
 }
 
 .parrafo-regalos{
+    font-size: 18px;
+    margin: 0px 0px 10px 0px;
+    padding: 10px;
     text-align: center;
 }
 
-.div-container-regalos{
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center;
-    margin: 15px;
+.linea-gradiente {
+    width: 80%;
+    height: 1px; /* Ajusta el grosor de la línea según tus preferencias */
+    background-image: linear-gradient(to right, #8B4513, white, #8B4513);
 }
-.div-regalos{
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    font-size: 16px;
-    width: 250px;
-    height: 100px;
-    border: 1px solid black;
-    border-radius: 10px;
-    line-height: 1.5;
+
+.titulo-mesa-de-regalos{
+    margin-top: 20px;
+    height: 80px;
+    width: auto;
 }
+
+.iconos-regalos{
+    height: 70px;
+    width: auto;
+}
+
+
 
 /* Codigo de vestimenta */
 
 #codigoDeVestimenta{
-    background-image: url("../img/codigo-de-vestimenta.jpg");
+    background-image: url("../img/FONDO\ DE\ CONFIRMACIÓN.jpg");
     background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco con opacidad */
     background-size: cover;
     background-repeat: no-repeat;
@@ -318,22 +376,12 @@ header {
     align-items: center; 
 }
 
-.parrafo-vestimenta{
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.parrafo-novia{
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
-    font-size: 18px;
-}
 .div-wifi{
-    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    width: 300px;
     height: 150px;
     border: 1px solid black;
     border-radius: 10px;
@@ -341,9 +389,48 @@ header {
 
 .parrafo-wifi{
     text-align: center;
+    padding: 18px;
+}
+
+.titulo-importante{
+    margin-top: 30px;
+    height: 80px;
+    width: auto;
+}
+
+.parrafo-importante{
+    font-size: 18px;
+    text-align: center;
+    padding: 30px;
+}
+
+.titulo-confirmacion{
+    margin-top: 30px;
+    height: 60px;
+    width: auto;
+}
+
+.boton-ws{
+    margin-top: 5px;
+    height: 60px;
+    width: auto;
+}
+
+.span-confirmacion-arriba{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
     padding: 10px;
 }
-/* Confirmacion */
+.span-confirmacion-abajo{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    padding: 5px;
+    margin-bottom: 30px
+}
+/* 
+/* Confirmacion 
 
 #confirmacion{
     display: flex;
@@ -380,4 +467,4 @@ header {
 
 .button-ws:hover {
     background-color: #2980b9; 
-}
+} */

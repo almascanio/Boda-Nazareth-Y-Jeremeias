@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
   });
 
-  // Esperar a que el usuario interactúe y luego reproducir
+  // Reproducir automáticamente al hacer clic en la página
   document.addEventListener("click", () => {
       if (!reproduciendo) {
           audio.play();
@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
   });
 });
+
 
 
 
