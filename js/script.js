@@ -22,36 +22,24 @@ actualizarContador(); // Actualizar contador inmediatamente
 setInterval(actualizarContador, 1000); // Actualizar cada segundo
 
 /* Reproductor de musica */
-document.addEventListener("DOMContentLoaded", () => {
-  const reproductor = document.getElementById("reproductor");
-  const audio = document.getElementById("miAudio");
-  let reproduciendo = false;
+const reproductor = document.getElementById("reproductor");
+const audio = document.getElementById("miAudio");
+let reproduciendo = false;
 
-  reproductor.addEventListener("click", (e) => {
-      e.preventDefault();
+reproductor.addEventListener("click", (e) => {
+    e.preventDefault();
 
-      if (reproduciendo) {
-          audio.pause();
-          reproduciendo = false;
-          reproductor.querySelector("i").classList.remove("bi-pause-fill");
-          reproductor.querySelector("i").classList.add("bi-caret-right-fill");
-      } else {
-          audio.play();
-          reproduciendo = true;
-          reproductor.querySelector("i").classList.remove("bi-caret-right-fill");
-          reproductor.querySelector("i").classList.add("bi-pause-fill");
-      }
-  });
-
-  // Reproducir automáticamente al hacer clic en la página
-  document.addEventListener("click", () => {
-      if (!reproduciendo) {
-          audio.play();
-          reproduciendo = true;
-          reproductor.querySelector("i").classList.remove("bi-caret-right-fill");
-          reproductor.querySelector("i").classList.add("bi-pause-fill");
-      }
-  });
+    if (reproduciendo) {
+        audio.pause();
+        reproduciendo = false;
+        reproductor.querySelector("i").classList.remove("bi-pause-fill");
+        reproductor.querySelector("i").classList.add("bi-caret-right-fill");
+    } else {
+        audio.play();
+        reproduciendo = true;
+        reproductor.querySelector("i").classList.remove("bi-caret-right-fill");
+        reproductor.querySelector("i").classList.add("bi-pause-fill");
+    }
 });
 
 

@@ -1,17 +1,20 @@
 /* Importar tipografias */
 
+@font-face {font-family:"Anaktoria"; src:url("../fuente/Anaktoria.eot") format("eot"),url("../fuente/Anaktoria.woff") format("woff"),url("../fuente/Anaktoria.ttf") format("truetype"),url("Anaktoria.svg#Anaktoria") format("svg");font-weight:normal;font-style:normal;}
+
 /* Reset General */
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
 
 body{
     color: black;
     line-height: 1.2;
+    font-family: Anaktoria;
 }
 
 
@@ -19,7 +22,7 @@ body{
 
 #inicio{
     background-image: url("../img/FONDO\ DE\ INICIO.jpg");
-    background-color: #c8c4b9de; 
+    background-color:  #d3cfc5cb; 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -92,7 +95,7 @@ body{
 .escrito-imagen-redondeada{
     position: relative;
     width: 200px;
-    bottom: 110px;;
+    bottom: 110px;
     right: 90px;
     height: 200px;
     transform: rotate(-10deg);
@@ -110,6 +113,13 @@ body{
     height: auto;
     margin-top: -10rem; 
  } 
+
+.fondo-nos-casamos{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
 
 .escrito-imagen-redondeada-abajo{
     position: relative;
@@ -181,7 +191,7 @@ body{
 .parrafo-nos-casamos{
     position: relative;
     z-index: 2;
-    font-size: 12px;
+    font-size: 18px;
     text-align: left;
     white-space: pre-line;
     padding: 0px 0px 0px 40px;
@@ -201,7 +211,7 @@ body{
 
 #cuandoYDonde{
     background-image: url("../img/FONDO\ CUANDO\ Y\ DONDE.jpg");
-    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco con opacidad */
+    background-color:  #d3cfc5cb; /* Fondo blanco con opacidad */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -215,7 +225,7 @@ body{
 
 .titulo-cuando-donde{
     width: auto;
-    height: 35px;
+    height: 40px;
     margin-top: 20px;
 }
 
@@ -225,12 +235,13 @@ body{
     justify-content: center;
     width: 300px;
     height: 100px;
-    border: 1px solid black;
+    border: 1px solid #9B856F;
     border-radius: 10px;
     font-size: 25px;
     font-weight: bold;
     text-align: center;
     margin-top: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra */
 }
 
 .div-conteo-adentro{
@@ -256,7 +267,7 @@ body{
 
 .logo-villa-le-brioche{
     margin: 20px;
-    width: 200px;
+    width: 220px;
     height: auto;
 }
 
@@ -273,7 +284,7 @@ body{
 }
 
 .button-mapa {
-    padding: 10px 20px; 
+    padding: 12px 22px; 
     margin: 10px;
     background-color: transparent; 
     color: #000000; 
@@ -281,9 +292,10 @@ body{
     border-radius: 10px; 
     border: 1px solid #9B856F;
     cursor: pointer; 
-    font-size: 16px; 
+    font-size: 18px; 
     text-decoration: none; 
     text-transform: uppercase;
+     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra */
 }
 
 .button-mapa:hover {
@@ -292,14 +304,14 @@ body{
 }
 
 .parrafo-cuando-donde{
-    font-size: 15px;
+    font-size: 18px;
     text-align: center;
     padding: 20px;
 }
 
 .img-att{
     width: auto;
-    height: 50px;
+    height: 60px;
     margin-top: -10px;
 }
 
@@ -307,7 +319,7 @@ body{
 
 #regalos{
     background-image: url("../img/FONDO\ DRESS\ CODE.jpg");
-    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco con opacidad */
+    background-color: #d3cfc5cb; /* Fondo blanco con opacidad */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -325,7 +337,7 @@ body{
 }
 
 .colores-codigo-de-vestimenta{
-    height: 45px;
+    height: 50px;
     width: auto;
     margin: 20px;
 }
@@ -345,7 +357,7 @@ body{
 .linea-gradiente {
     width: 80%;
     height: 1px; /* Ajusta el grosor de la línea según tus preferencias */
-    background-image: linear-gradient(to right, #8B4513, white, #8B4513);
+    background-image: linear-gradient(to right, #9B856F, white, #B2A493);
 }
 
 .titulo-mesa-de-regalos{
@@ -355,7 +367,7 @@ body{
 }
 
 .iconos-regalos{
-    height: 70px;
+    height: 80px;
     width: auto;
 }
 
@@ -365,7 +377,7 @@ body{
 
 #codigoDeVestimenta{
     background-image: url("../img/FONDO\ DE\ CONFIRMACIÓN.jpg");
-    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco con opacidad */
+    background-color: #e8e8e6de; /* Fondo blanco con opacidad */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -383,13 +395,15 @@ body{
     margin: 40px;
     width: 300px;
     height: 150px;
-    border: 1px solid black;
+    border: 1px solid #9B856F;
     border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .parrafo-wifi{
     text-align: center;
     padding: 18px;
+    font-size: 18px;
 }
 
 .titulo-importante{
@@ -399,9 +413,14 @@ body{
 }
 
 .parrafo-importante{
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     padding: 30px;
+}
+
+.logo-con-opacidad{
+    height: 400px;
+    width: auto;
 }
 
 .titulo-confirmacion{
@@ -413,58 +432,23 @@ body{
 .boton-ws{
     margin-top: 5px;
     height: 60px;
-    width: auto;
+    width: auto; 
+}
+
+.boton-ws:hover{
+    transform: scale(1.1); 
 }
 
 .span-confirmacion-arriba{
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     font-weight: 600;
     padding: 10px;
 }
 .span-confirmacion-abajo{
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     font-weight: 600;
     padding: 5px;
     margin-bottom: 30px
 }
-/* 
-/* Confirmacion 
-
-#confirmacion{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center; 
-    min-height: 80vh;
-}
-.span-confirmacion-arriba{
-    font-size: 18px;
-    text-align: center;
-    font-weight: 600;
-    padding: 10px;
-}
-.span-confirmacion-abajo{
-    font-size: 18px;
-    text-align: center;
-    font-weight: 600;
-    padding: 10px;
-    margin-bottom: 30px
-}
-
-.button-ws{
-    padding: 10px 20px; 
-    background-color: #3498db; 
-    color: #fff; 
-    border: none; 
-    border-radius: 10px; 
-    cursor: pointer; 
-    font-size: 16px; 
-    text-decoration: none; 
-    text-transform: uppercase;
-}
-
-.button-ws:hover {
-    background-color: #2980b9; 
-} */
