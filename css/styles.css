@@ -8,7 +8,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* scroll-behavior: smooth; */
 }
 
 body{
@@ -16,7 +15,6 @@ body{
     line-height: 1.2;
     font-family: Anaktoria;
 }
-
 
 /* Inicio */
 
@@ -40,47 +38,16 @@ body{
     max-width: 100%;
     position: relative;
 }
-/* 
-.div-imagen-redondeada {
-    position: relative;
-    width: 100vw; 
-    height: 280px; 
-    overflow: hidden;
-}
-
-.imagen-redondeada {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    border-radius: 0 0 50% 50%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-}
- */
-/* 
-.div-imagen-logo {
-    position: absolute;
-    top: -2rem;
-    left: -2.5rem;
-    margin: 0;
-    padding: 0;
-    z-index: 2;
-}
-
-.logo {
-    width: 150px; 
-    height: auto;
-} */
 
 .reproduccion {
     position: absolute;
-    top: 1rem; /* Ajusta este valor para posicionar en la esquina */
-    right: 1rem; /* Ajusta este valor para posicionar en la esquina */
+    top: 1.5rem; 
+    right: 1.1rem; 
     background-color:  #DED9D6;
     border-radius: 50%;
-    padding: 12px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
     z-index: 3;
     display: flex;
     align-items: center;
@@ -89,26 +56,23 @@ body{
 }
 
 .reproduccion:hover {
-    background-color: #cdb8a6ea; /* Cambio de color al pasar el ratón */
+    background-color: #cdb8a6ea; 
 }
 
 #reproductor {
     color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 #reproductor i {
-    font-size: 25px;
+    font-size: 24px;
+    line-height: 1;
 }
 
-/* .escrito-imagen-redondeada{
-    position: relative;
-    width: 200px;
-    bottom: 110px;
-    right: 90px;
-    height: 200px;
-    transform: rotate(-10deg);
-}
- */
 .imagen-medio{
     width: 250px;
     height: auto;
@@ -121,94 +85,16 @@ body{
     max-width: 100%;
     position: relative;
 }
-/* 
- .container-historia{
-    position: relative;
-    display: inline-block;
-    height: auto;
-    margin-top: -10rem; 
- } 
 
-.fondo-nos-casamos{
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    position: relative;
-}
-
-.container-nos-casamos {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 2;
-}
-
-/* .escrito-imagen-redondeada-abajo{
-    position: relative;
-    left: 160px;
-    top: 120px;
-    width: 200px;
-    height: 200px;
-    transform: rotate(-10deg);
-}
-
-
-
-.logo-nos-casamos{
-    position: absolute;
-    top: 160%;
-    left: 50%;
-    height: 90px;
-    width: auto;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-} 
-
-.titulo-nos-casamos{
-    position: absolute;
-    top: 166%;
-    left: 48%;
-    height: 100px;
-    width: auto;
-    transform: translateX(-50%);
-    z-index: 3;
-}
-
-.parrafo-nos-casamos{
-    position: absolute;
-    top: 182%;
-    left: 5%;
-    z-index: 3;
-    font-size: 16px;
-    text-align: left;
-    white-space: pre-line;
-    padding: 0px 0px 0px 40px;
-}
-
-.firma-nos-casamos{
-    position: absolute;
-    top: 238%;
-    right: -20px;
-    width: 150px;
-    z-index: 3;
-    left: 15%;
-    height: auto;
-   /*  margin-top: 10px;
-    padding-left: 40px;
-    margin-bottom: 20px; 
-}
- */
 /* Cuando y donde */
 
-#cuandoYDonde{
+#cuando-donde{
     background-image: url("../img/FONDO\ CUANDO\ Y\ DONDE.jpg");
-    background-color:  #d3cfc5cb; /* Fondo blanco con opacidad */
+    background-color:  #d3cfc5cb; 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-blend-mode: lighten; /* Ajusta el modo de mezcla según tus preferencias */
+    background-blend-mode: lighten; 
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -234,7 +120,7 @@ body{
     font-weight: bold;
     text-align: center;
     margin-top: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .div-conteo-adentro{
@@ -287,7 +173,7 @@ body{
     font-size: 18px; 
     text-decoration: none; 
     text-transform: uppercase;
-     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .button-mapa:hover {
@@ -309,13 +195,13 @@ body{
 
 /* Regalos */
 
-#regalos{
+#dress-code{
     background-image: url("../img/FONDO\ DRESS\ CODE.jpg");
-    background-color: #d3cfc5cb; /* Fondo blanco con opacidad */
+    background-color: #d3cfc5cb; 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-blend-mode: lighten; /* Ajusta el modo de mezcla según tus preferencias */
+    background-blend-mode: lighten; 
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -348,7 +234,7 @@ body{
 
 .linea-gradiente {
     width: 80%;
-    height: 1px; /* Ajusta el grosor de la línea según tus preferencias */
+    height: 1px; 
     background-image: linear-gradient(to right, #9B856F, white, #B2A493);
 }
 
@@ -363,18 +249,15 @@ body{
     width: auto;
 }
 
-
-
 /* Codigo de vestimenta */
 
-#codigoDeVestimenta{
+#confirmacion{
     background-image: url("../img/FONDO\ DE\ CONFIRMACIÓN.jpg");
-    background-color: #e8e8e6de; /* Fondo blanco con opacidad */
+    background-color: #e8e8e6de; 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-blend-mode: lighten; /* Ajusta el modo de mezcla según tus preferencias */
-    display: flex;
+    background-blend-mode: lighten; 
     justify-content: center;
     flex-direction: column;
     align-items: center; 
