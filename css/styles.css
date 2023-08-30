@@ -90,11 +90,11 @@ body{
 
 #cuando-donde{
     background-image: url("../img/FONDO\ CUANDO\ Y\ DONDE.jpg");
-    background-color:  #d3cfc5cb; /* Fondo blanco con opacidad */
+    background-color:  #d3cfc5cb; 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-blend-mode: lighten; /* Ajusta el modo de mezcla según tus preferencias */
+    background-blend-mode: lighten; 
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -120,7 +120,7 @@ body{
     font-weight: bold;
     text-align: center;
     margin-top: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .div-conteo-adentro{
@@ -173,7 +173,7 @@ body{
     font-size: 18px; 
     text-decoration: none; 
     text-transform: uppercase;
-     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .button-mapa:hover {
@@ -197,11 +197,11 @@ body{
 
 #dress-code{
     background-image: url("../img/FONDO\ DRESS\ CODE.jpg");
-    background-color: #d3cfc5cb; /* Fondo blanco con opacidad */
+    background-color: #d3cfc5cb; 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-blend-mode: lighten; /* Ajusta el modo de mezcla según tus preferencias */
+    background-blend-mode: lighten; 
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -234,7 +234,7 @@ body{
 
 .linea-gradiente {
     width: 80%;
-    height: 1px; /* Ajusta el grosor de la línea según tus preferencias */
+    height: 1px; 
     background-image: linear-gradient(to right, #9B856F, white, #B2A493);
 }
 
@@ -249,17 +249,15 @@ body{
     width: auto;
 }
 
-
-
 /* Codigo de vestimenta */
 
 #confirmacion{
     background-image: url("../img/FONDO\ DE\ CONFIRMACIÓN.jpg");
-    background-color: #e8e8e6de; /* Fondo blanco con opacidad */
+    background-color: #e8e8e6de; 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-blend-mode: lighten; /* Ajusta el modo de mezcla según tus preferencias */
+    background-blend-mode: lighten; 
     display: flex;
     justify-content: center;
     flex-direction: column;
