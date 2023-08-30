@@ -34,6 +34,13 @@ body{
     z-index: 0;
 }
 
+.inicio-header{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    position: relative;
+}
+/* 
 .div-imagen-redondeada {
     position: relative;
     width: 100vw; 
@@ -51,7 +58,8 @@ body{
     left: 0;
     z-index: 1;
 }
-
+ */
+/* 
 .div-imagen-logo {
     position: absolute;
     top: -2rem;
@@ -64,7 +72,7 @@ body{
 .logo {
     width: 150px; 
     height: auto;
-}
+} */
 
 .reproduccion {
     position: absolute;
@@ -92,7 +100,7 @@ body{
     font-size: 25px;
 }
 
-.escrito-imagen-redondeada{
+/* .escrito-imagen-redondeada{
     position: relative;
     width: 200px;
     bottom: 110px;
@@ -100,13 +108,20 @@ body{
     height: 200px;
     transform: rotate(-10deg);
 }
-
+ */
 .imagen-medio{
     width: 250px;
     height: auto;
-    margin-top: -10rem;
+    margin: 25px;
 }
 
+.inicio-se-casan{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    position: relative;
+}
+/* 
  .container-historia{
     position: relative;
     display: inline-block;
@@ -138,7 +153,6 @@ body{
     height: 200px;
     transform: rotate(-10deg);
 }
- */
 
 
 
@@ -183,9 +197,9 @@ body{
     height: auto;
    /*  margin-top: 10px;
     padding-left: 40px;
-    margin-bottom: 20px; */
+    margin-bottom: 20px; 
 }
-
+ */
 /* Cuando y donde */
 
 #cuandoYDonde{
@@ -225,7 +239,6 @@ body{
 
 .div-conteo-adentro{
     margin: 10px;
-    padding: 80px;
 }
 
 .span-conteo {
@@ -398,7 +411,7 @@ body{
 }
 
 .logo-con-opacidad{
-    margin-top: -80px;
+    margin-top: -90px;
     height: 400px;
     width: auto;
 }
@@ -429,13 +442,11 @@ body{
 .span-confirmacion-arriba{
     font-size: 20px;
     text-align: center;
-    font-weight: 600;
     padding: 10px;
 }
 .span-confirmacion-abajo{
     font-size: 20px;
     text-align: center;
-    font-weight: 600;
     padding: 5px;
     margin-bottom: 30px
 }
