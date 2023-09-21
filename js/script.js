@@ -1,5 +1,5 @@
 function actualizarContador() {
-  const fechaObjetivo = new Date('2023-11-11T14:00:00'); // Fecha y hora objetivo
+  const fechaObjetivo = new Date('2023-11-11T15:00:00'); // Fecha y hora objetivo
   const ahora = new Date(); // Hora actual
 
   const diferencia = fechaObjetivo - ahora; // Diferencia en milisegundos
